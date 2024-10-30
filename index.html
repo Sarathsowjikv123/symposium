@@ -1,0 +1,429 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayuddha 2K25</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="logo">
+            <img src="aulogo.png" alt="anna university">
+            <h2 class="animate__animated animate__zoomin animate__delay-1s">UCE BIT CAMPUS TRICHY</h2>
+        </div>
+        <canvas id="Canvas"></canvas>
+        <script src="app.js"></script>
+        <nav>
+            <ul>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#project">Events</a>
+                <a href="#contact">Contact</a>
+            </ul>
+        </nav>
+    </div>
+    <div class="sympologo">
+        <center><img src="sympologo.png" alt="sympologo"></center>
+    </div>
+    <div class="sympoquote"><br>
+        <center>
+            <h1 class="animate__animated animate__rollin animate__delay-1s" style="color:#ff2d75; font-size: 30px;">
+                <span class="auto-type"></span>
+            </h1>
+        </center><br>
+        <center><input type="button" value="Register"></center><br>
+        <center>
+            <h1 style="color: white;font-family: 'Fasthand', cursive;font-family: 'Kalam', cursive;;">Event Starts In...
+            </h1>
+        </center><br>
+    </div>
+    <div class="countDown">
+        <div id="time">
+            <div class="circle" style="--clr:#ffffff;">
+                <div class="dots day_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70" class="dc"></circle>
+                    <circle cx="70" cy="70" r="70" id="dd" class="dc"></circle>
+                </svg>
+                <div id="days">00</div>
+            </div>
+            <div class="circle" style="--clr:#ff2972;">
+                <div class="dots hr_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70" class="hc"></circle>
+                    <circle cx="70" cy="70" r="70" id="hh" class="hc"></circle>
+                </svg>
+                <div id="hours">00</div>
+            </div>
+            <div class="circle" style="--clr:#fee800;">
+                <div class="dots min_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70" class="mc"></circle>
+                    <circle cx="70" cy="70" r="70" id="mm" class="mc"></circle>
+                </svg>
+                <div id="minutes">00</div>
+
+            </div>
+            <div class="circle" style="--clr:#04fc43;">
+                <div class="dots sec_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70" class="sc"></circle>
+                    <circle cx="70" cy="70" r="70" id="ss" class="sc"></circle>
+                </svg>
+                <div id="seconds">00</div>
+            </div>
+        </div>
+        <h2 class="newYear">Prayuddha 2K25<br><br><span>Event Started !!!</span></h2>
+    </div>
+
+
+
+
+
+
+    <div class="about" id="about">
+        <center>
+            <h1>About US</h1>
+            <h4>Unleash Your Tech Potential at Prayuddha '25! ⚔️</h4>
+            <h4>Welcome to the Department of Information Technology at UCE - BIT Campus Trichy!</h4><br>
+        </center>
+
+        <!-- Displayed "What to Expect" Content -->
+        <div class="expect">
+            <h3>What to Expect?</h3>
+            <ul>
+                <li><b>Epic Competitions:</b> Dive into a series of thrilling contests that challenge your coding
+                    prowess, innovative thinking, and problem-solving skills. From hackathons to coding challenges, the
+                    arena is set for the fiercest tech warriors!</li>
+                <li><b>Skill Development:</b> As Will Smith said, "Talent you have naturally, Skill is only developed by
+                    hours and hours of beating your own craft." Join workshops and tech talks to sharpen your skills and
+                    gain insights from industry experts.</li>
+                <li><b>Networking Opportunities:</b> Connect with fellow tech enthusiasts, industry leaders, and
+                    mentors. Forge alliances and create lasting connections that can propel your career forward.</li>
+                <li><b>Beyond Tech:</b> Not just for coders! Participate in non-tech events that ignite creativity,
+                    teamwork, and strategic thinking. Showcase your versatility and prove your mettle in every arena.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Toggle-able "Why Participate" Section -->
+        <div class="toggle-section">
+            <div class="question" onclick="toggleContent('participateContent')">
+                <span>Why Participate?</span>
+                <span class="arrow">&#9654;</span>
+            </div>
+            <div id="participateContent" class="content">
+                <h4>Prayuddha '25 is your chance to:</h4>
+                <ul>
+                    <li><b>Showcase Your Talent:</b> Stand out among peers and demonstrate your skills on a national
+                        stage.</li>
+                    <li><b>Compete and Conquer:</b> Test your abilities against some of the brightest minds in the
+                        country.</li>
+                    <li><b>Create Lasting Memories:</b> Engage in a vibrant atmosphere filled with camaraderie,
+                        competition, and innovation.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Toggle-able "Join the Battle" Section -->
+        <div class="toggle-section">
+            <div class="question" onclick="toggleContent('battleContent')">
+                <span>Join the Battle!</span>
+                <span class="arrow">&#9654;</span>
+            </div>
+            <div id="battleContent" class="content">
+                <p>Prepare yourself for the ultimate tech showdown. Whether you’re a seasoned warrior or a newcomer
+                    ready to learn, Prayuddha '25 awaits you. Embrace the challenge, refine your skills, and rise as a
+                    tech legend!</p>
+            </div>
+        </div>
+        <center>
+            <h4>Mark your calendars and get ready for an unforgettable experience!</h4>
+        </center>
+        <center>
+            <h4>Prayuddha '25 – Where Innovation Meets Valor!</h4>
+        </center>
+    </div>
+
+
+
+
+
+
+
+
+    <section class="project" id="project">
+        <div class="main-text" id="project">
+            <h2>░⡷⠂ΞVΞ<span>ИΓS⠐⢾░</span></h2>
+
+            <div class="portfolio-content">
+                <div class="row">
+                    <img src="m1.jpeg">
+                    <center>
+                        <h1>𓂀 𝒯𝑒𝒸𝒽𝓃𝒾𝒸𝒶𝓁 𝓔𝓋𝑒𝓃𝓉𝓈 𓂀</h1>
+                    </center>
+                    <div class="layer">
+                        <h5>𝒯𝑒𝒸𝒽𝓃𝒾𝒸𝒶𝓁 𝐸𝓋𝑒𝓃𝓉𝓈</h5>
+                        <Ol>
+                            <li><a href="technical/brain.html">BRAIN TEASERS</a></li><br>
+                            <li><a href="technical/codemoji.html">CODEMOJI</a></li><br>
+                            <li><a href="technical/fix.html">FIX-IT-FIESTA</a></li><br>
+                            <li><a href="technical/codesyn.html">CODE SYNTHESIS</a></li><br>
+                            <li><a href="technical/icon.html">ICONOGRAPHY</a></li><br>
+                            <li><a href="technical/query.html">QUERY MASTER</a></li><br>
+                            <li><a href="technical/design.html">DESIGN SPRINT</a></li><br>
+                            <li><a href="technical/innolink.html">CONNECTIONS</a></li><br>
+                            <li><a href="technical/spin.html">SPIN THE WHEEL</a></li><br>
+                        </Ol>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="m2.jpeg">
+                    <center>
+                        <h1>𓂀 𝒩𝑜𝓃-𝒯𝑒𝒸𝒽𝓃𝒾𝒸𝒶𝓁 𝓔𝓋𝑒𝓃𝓉𝓈 𓂀</h1>
+                    </center>
+                    <div class="layer">
+                        <h5>𝒩𝑜𝓃-𝒯𝑒𝒸𝒽𝓃𝒾𝒸𝒶𝓁 𝐸𝓋𝑒𝓃𝓉𝓈</h5>
+                        <Ol>
+                            <li><a href="nontechnical/creativecut.html">CREATIVE CUT</a></li><br>
+                            <li><a href="nontechnical/photohunt.html">PHOTO HUNT</a></li><br>
+                            <li><a href="nontechnical/minute.html">MINUTE TO WIN IT</a></li><br>
+                            <li><a href="nontechnical/feb30.html">FEB 30 GAMES</a></li><br>
+                            <li><a href="nontechnical/boardmaster.html">BOARD MASTERS</a></li><br>
+                            <li><a href="nontechnical/elitegames.html">ELITE GAMERS LEAGUE</a></li><br>
+                            <li><a href="nontechnical/focus.html">FOCUS FRENZY</a></li><br>
+                            <li><a href="nontechnical/meme.html">MEME CREATION</a></li><br>
+                            <li><a href="nontechnical/speedy.html">SPEEDY SHENANIGANS</a></li><br>
+                            <li><a href="nontechnical/tamil.html">THAMIZHODU VILAYADU</a></li>
+                        </Ol>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="m3.jpeg">
+                    <center>
+                        <h1>𓂀 𝒫𝒶𝓅𝑒𝓇 𝒫𝓇𝑒𝓈𝑒𝓃𝓉𝒶𝓉𝒾𝑜𝓃 𓂀</h1>
+                    </center>
+                    <div class="layer">
+                        <h5><a href="paper.html">𝒫𝒶𝓅𝑒𝓇 𝒫𝓇𝑒𝓈𝑒𝓃𝓉𝒶𝓉𝒾𝑜𝓃</a></h5>
+                        <Ol>
+                            <li><a href="#"></a>AI ML & Deep learning.</li><br>
+                            <li><a href="#"></a>IOT.</li><br>
+                            <li><a href="#"></a>Cloud computing.</li><br>
+                            <li><a href="#"></a>Cyber security.</li><br>
+                            <li><a href="#"></a>Block Chain technologies.</li><br>
+                        </Ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="m4.jpeg">
+                    <center>
+                        <h1>𓂀 𝒲𝑜𝓇𝓀𝓈𝒽𝑜𝓅 𓂀</h1>
+                    </center>
+                    <div class="layer">
+                        <h5  style="color: black;">𝒲𝑜𝓇𝓀𝓈𝒽𝑜𝓅</h5>
+                        <Ol>
+                            <li><a href="index.html">CREATIVE CUT</a></li><br>
+                            <li><a href="index.html">PHOTO HUNT</a></li><br>
+                            <li><a href="index.html">MINUTE TO WIN IT</a></li><br>
+                        </Ol>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function runOnMobile() {
+        }
+        // Check if the screen width is 768px or less (common breakpoint for mobile)
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            runOnMobile();
+            console.log("Running on mobile!");
+            let elements = document.getElementsByClassName('sc');
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].setAttribute('r', '45');
+                elements[i].setAttribute('cx', '45');
+                elements[i].setAttribute('cy', '45');
+            }
+            elements = document.getElementsByClassName('dc');
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].setAttribute('r', '45');
+                elements[i].setAttribute('cx', '45');
+                elements[i].setAttribute('cy', '45');
+            }
+            elements = document.getElementsByClassName('mc');
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].setAttribute('r', '45');
+                elements[i].setAttribute('cx', '45');
+                elements[i].setAttribute('cy', '45');
+            }
+            elements = document.getElementsByClassName('hc');
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].setAttribute('r', '45');
+                elements[i].setAttribute('cx', '45');
+                elements[i].setAttribute('cy', '45');
+            }
+
+            let days = document.getElementById('days');
+            let hours = document.getElementById('hours');
+            let minutes = document.getElementById('minutes');
+            let seconds = document.getElementById('seconds');
+
+            let dd = document.getElementById('dd');
+            let hh = document.getElementById('hh');
+            let mm = document.getElementById('mm');
+            let ss = document.getElementById('ss');
+
+            let day_dot = document.querySelector('.day_dot');
+            let hr_dot = document.querySelector('.hr_dot');
+            let min_dot = document.querySelector('.min_dot');
+            let sec_dot = document.querySelector('.sec_dot');
+
+            let endDate = '11/11/2024 09:30:00';
+
+            let x = setInterval(function () {
+                let now = new Date(endDate).getTime();
+                let countDown = new Date().getTime();
+                let distance = now - countDown;
+
+                let d = Math.floor(distance / (1000 * 60 * 60 * 24));
+                let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                let s = Math.floor((distance % (1000 * 60)) / (1000));
+
+                days.innerHTML = d + "<br><span>Days<span>";
+                hours.innerHTML = h + "<br><span>Hours<span>";
+                minutes.innerHTML = m + "<br><span>Minutes<span>";
+                seconds.innerHTML = s + "<br><span>Seconds<span>";
+
+                dd.style.strokeDashoffset = 360 - (280 * d) / 365;
+                hh.style.strokeDashoffset = 360 - (280 * h) / 24;
+                mm.style.strokeDashoffset = 360 - (280 * m) / 60;
+                ss.style.strokeDashoffset = 360 - (280 * s) / 60;
+
+                day_dot.style.transform = `rotateZ(${(d * 360 / 365) - 270}deg)`;
+                hr_dot.style.transform = `rotateZ(${(h * 360 / 24) - 270}deg)`;
+                min_dot.style.transform = `rotateZ(${(m * 360 / 60) - 270}deg)`;
+                sec_dot.style.transform = `rotateZ(${(s * 360 / 60) - 270}deg)`;
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("time").style.display = 'none';
+                    document.querySelector(".newYear").style.display = "block";
+                }
+            });
+        }
+        else {
+            let days = document.getElementById('days');
+            let hours = document.getElementById('hours');
+            let minutes = document.getElementById('minutes');
+            let seconds = document.getElementById('seconds');
+
+            let dd = document.getElementById('dd');
+            let hh = document.getElementById('hh');
+            let mm = document.getElementById('mm');
+            let ss = document.getElementById('ss');
+
+            let day_dot = document.querySelector('.day_dot');
+            let hr_dot = document.querySelector('.hr_dot');
+            let min_dot = document.querySelector('.min_dot');
+            let sec_dot = document.querySelector('.sec_dot');
+
+            let endDate = '11/11/2024 09:30:00';
+
+            let x = setInterval(function () {
+                let now = new Date(endDate).getTime();
+                let countDown = new Date().getTime();
+                let distance = now - countDown;
+
+                let d = Math.floor(distance / (1000 * 60 * 60 * 24));
+                let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                let s = Math.floor((distance % (1000 * 60)) / (1000));
+
+                days.innerHTML = d + "<br><span>Days<span>";
+                hours.innerHTML = h + "<br><span>Hours<span>";
+                minutes.innerHTML = m + "<br><span>Minutes<span>";
+                seconds.innerHTML = s + "<br><span>Seconds<span>";
+
+                dd.style.strokeDashoffset = 440 - (440 * d) / 365;
+                hh.style.strokeDashoffset = 440 - (440 * h) / 24;
+                mm.style.strokeDashoffset = 440 - (440 * m) / 60;
+                ss.style.strokeDashoffset = 440 - (440 * s) / 60;
+
+                day_dot.style.transform = `rotateZ(${(d * 360 / 365) - 270}deg)`;
+                hr_dot.style.transform = `rotateZ(${(h * 360 / 24) - 270}deg)`;
+                min_dot.style.transform = `rotateZ(${(m * 360 / 60) - 270}deg)`;
+                sec_dot.style.transform = `rotateZ(${(s * 360 / 60) - 270}deg)`;
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("time").style.display = 'none';
+                    document.querySelector(".newYear").style.display = "block";
+                }
+            });
+
+        }
+
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Innovate, Integrate, Inspire.", "November 11 and 12 , 2024"], typeSpeed: 100, backSpeed: 50, loop: true
+        })
+    </script>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const arrow = content.previousElementSibling.querySelector('.arrow');
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.style.opacity = '0';
+                arrow.innerHTML = "&#9654;"; // Right arrow
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.opacity = '1';
+                arrow.innerHTML = "&#9660;"; // Down arrow
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
