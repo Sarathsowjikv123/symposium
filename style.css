@@ -367,7 +367,7 @@ nav ul  a:hover{
 .about h1, h3, h2, h4 {
     color: white; /* Neon cyan color for headings */
     font-family: kalam; /* Cursive font for a stylized look */
-    text-shadow: 0px 0px 8px #00ffcc; /* Glowing effect for headings */
+    text-shadow: 0px 0px 8px white; /* Glowing effect for headings */
 }
 
 .about h3{
