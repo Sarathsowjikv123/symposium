@@ -617,9 +617,6 @@ ul li {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, auto));
     }
-    .main-text h2 {
-        font-size: 40px;
-    }
     .layer {
 
         width: 90%;
@@ -639,3 +636,61 @@ ul li {
     }
 
 }
+
+
+
+/*desktop site*/
+
+        @media (max-width: 992px) {
+
+          .portfolio-content {
+
+            margin-top: 50px;
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+
+        }
+
+         .layer {
+
+            width: 87%;
+
+            height: 0;
+
+            background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+
+            position: absolute;
+
+            border-radius: 8px;
+
+            left: 40px;
+
+            bottom: 40px;
+
+            overflow: hidden;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 0 15px;
+
+            transition: height 0.5s;
+
+    }
+
+    
+
+    .row h1{
+
+      font-size: 22px;
+
+    }
+
+        }
