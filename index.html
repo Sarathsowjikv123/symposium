@@ -19,20 +19,21 @@
     <div class="hero">
         <div class="logo">
             <img src="aulogo.png" alt="anna university">
-            <h2 class="animate__animated animate__zoomin animate__delay-1s">UCE BIT CAMPUS TRICHY</h2>
+            <h2 class="animate__animated animate__zoomin animate__delay-1s" style="text-shadow: none;">UCE BIT CAMPUS TRICHY</h2>
         </div>
-        <canvas id="Canvas"></canvas>
-        <script src="app.js"></script>
         <nav>
             <ul>
-                <a href="#home">Home</a>
+                <a href="#balance">Home</a>
                 <a href="#about">About</a>
                 <a href="#project">Events</a>
                 <a href="#contact">Contact</a>
             </ul>
         </nav>
     </div>
-    <div class="sympologo">
+    <canvas id="Canvas"></canvas>
+    <script src="app.js"></script>
+    <div class="balance" id="balance"></div>
+    <div class="sympologo"  id="sympologo">
         <center><img src="sympologo.png" alt="sympologo"></center>
     </div>
     <div class="sympoquote"><br>
@@ -41,7 +42,7 @@
                 <span class="auto-type"></span>
             </h1>
         </center><br>
-        <center><input type="button" value="Register"></center><br>
+        <center><input type="button" value="Register" onclick="registerBtn()"></center><br>
         <center>
             <h1 style="color: white;font-family: 'Fasthand', cursive;font-family: 'Kalam', cursive;;">Event Starts In...
             </h1>
@@ -92,6 +93,7 @@
 
 
     <div class="about" id="about">
+        <br>
         <center>
             <h1>About US</h1>
             <h4>Unleash Your Tech Potential at Prayuddha '25! ⚔️</h4>
@@ -217,7 +219,7 @@
                         <h1>𓂀 𝒫𝒶𝓅𝑒𝓇 𝒫𝓇𝑒𝓈𝑒𝓃𝓉𝒶𝓉𝒾𝑜𝓃 𓂀</h1>
                     </center>
                     <div class="layer">
-                        <h5><a href="paper.html">𝒫𝒶𝓅𝑒𝓇 𝒫𝓇𝑒𝓈𝑒𝓃𝓉𝒶𝓉𝒾𝑜𝓃</a></h5>
+                        <h5><a href="technical/paper.html">𝒫𝒶𝓅𝑒𝓇 𝒫𝓇𝑒𝓈𝑒𝓃𝓉𝒶𝓉𝒾𝑜𝓃</a></h5>
                         <Ol>
                             <li><a href="#"></a>AI ML & Deep learning.</li><br>
                             <li><a href="#"></a>IOT.</li><br>
@@ -230,14 +232,14 @@
                 <div class="row">
                     <img src="m4.jpeg">
                     <center>
-                        <h1>𓂀 𝒲𝑜𝓇𝓀𝓈𝒽𝑜𝓅 𓂀</h1>
+                        <h1 onclick="workShopReg()">𓂀 𝒲𝑜𝓇𝓀𝓈𝒽𝑜𝓅 𓂀</h1>
                     </center>
                     <div class="layer">
-                        <h5  style="color: black;">𝒲𝑜𝓇𝓀𝓈𝒽𝑜𝓅</h5>
+                        <h5 style="color: black;"><a href="https://forms.gle/VxCFFG42s1VtcJMWA">𝒲𝑜𝓇𝓀𝓈𝒽𝑜𝓅</a></h5>
                         <Ol>
-                            <li><a href="index.html">CREATIVE CUT</a></li><br>
-                            <li><a href="index.html">PHOTO HUNT</a></li><br>
-                            <li><a href="index.html">MINUTE TO WIN IT</a></li><br>
+                            <li><a href="https://forms.gle/VxCFFG42s1VtcJMWA">CREATIVE CUT</a></li><br>
+                            <li><a href="https://forms.gle/VxCFFG42s1VtcJMWA">PHOTO HUNT</a></li><br>
+                            <li><a href="https://forms.gle/VxCFFG42s1VtcJMWA">MINUTE TO WIN IT</a></li><br>
                         </Ol>
                     </div>
                 </div>
@@ -419,6 +421,14 @@
                 content.style.opacity = '1';
                 arrow.innerHTML = "&#9660;"; // Down arrow
             }
+        }
+    </script>
+    <script>
+        function registerBtn(){
+            location.href = "https://forms.gle/UzCYZdrJeoYLAuC38";
+        }
+        function workShopReg(){
+            location.href = "https://forms.gle/VxCFFG42s1VtcJMWA";
         }
     </script>
 
