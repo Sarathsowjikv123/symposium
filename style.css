@@ -239,7 +239,7 @@ nav ul  a:hover{
         height: fit-content;
     }
     .hero .logo img{
-        width:80px;
+        width:120px;
         height:75px;
     }
     .hero .logo h2{
@@ -617,6 +617,9 @@ ul li {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, auto));
     }
+    .main-text h2 {
+        font-size: 40px;
+    }
     .layer {
 
         width: 90%;
@@ -634,72 +637,92 @@ ul li {
         padding: 0 15px;
         transition: height 0.5s;
     }
-    
-.main-text h2 {
-    font-size: 50px;
+
+}
+
+
+/* contact */
+
+.contact ol{
+    list-style-type: none;
+}
+.info-title{
+    color:#ecf0f3;
+    text-align:center;
+    font-size: 35px;
+    letter-spacing: 0.5px;
+    padding-bottom:5px ;
+    font-family: 'Roboto', sans-serif;
+}
+.info-sub-title{
+    font-family: 'Roboto', sans-serif;
+    color:#ecf0f3;
+    text-align:center;
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 17px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    padding-bottom:8px;
+}
+
+.social-icons {
+    list-style: none;
     text-align: center;
+    margin: 20px 0px;
 }
-
+.social-icons li {
+    display: inline-block;
 }
-
-
-
-/*desktop site*/
-
-        @media (max-width: 992px) {
-
-          .portfolio-content {
-
-            margin-top: 50px;
-
-            display: grid;
-
-            grid-template-columns: repeat(auto-fit, minmax(400px, auto));
-
-        }
-
-         .layer {
-
-            width: 95%;
-
-            height: 0;
-
-            background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
-
-            position: absolute;
-
-            border-radius: 8px;
-
-            left: 40px;
-
-            bottom: 40px;
-
-            overflow: hidden;
-
-            display: flex;
-
-            flex-direction: column;
-
-            align-items: center;
-
-            justify-content: center;
-
-            padding: 0 15px;
-
-            transition: height 0.5s;
-
+.social-icons li i {
+    background: #F44770;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 22%;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.social-icons li i:hover {
+    background: #fff;
+    color: #000000;
+}
+.co-ordinators{
+    justify-content: center;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 768px) {
+    .info-title{
+        color:#ecf0f3;
+        text-align:center;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        padding-bottom:5px ;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
     }
-
-            .logo h2{
-                font-size:32px;
-            }
-
-    
-
-    .row h1{
-
-      font-size: 22px;
-
+    .info-sub-title{
+        font-family: 'Roboto', sans-serif;
+        color:#ecf0f3;
+        text-align:center;
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 17px;
+        letter-spacing: 0.5px;
+        line-height: 26px;
+        padding-bottom:8px;
+        width: 100%;
     }
-
-        }
+    .contact{
+        width: 100%;
+    }
+    .co-ordinators{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        padding-left: 20%;
+    }
+}
