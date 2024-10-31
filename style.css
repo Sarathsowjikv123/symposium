@@ -733,7 +733,7 @@ ul li {
             grid-template-columns: repeat(auto-fit, minmax(400px, auto));
         }
          .layer {
-            width: 87%;
+            width: 95%;
             height: 0;
             background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
             position: absolute;
@@ -750,7 +750,6 @@ ul li {
     }
     .logo h2{
     font-size: 32px;
-    
 }
     .row h1{
       font-size: 22px;
